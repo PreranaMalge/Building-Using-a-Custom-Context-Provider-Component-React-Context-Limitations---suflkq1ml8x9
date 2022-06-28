@@ -6,7 +6,7 @@ const Home = () =>{
 
     return(
         <>
-            <div>You are home.</div>
+            <div>You are home</div>
             <a>{location.pathname}</a>
         </>
     )

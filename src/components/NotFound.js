@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Other=()=>{
+const NotFound=()=>{
     return(
         <>
             <div>
@@ -21,4 +21,4 @@ const Other=()=>{
         </>
     )
 }
-export default Other;
+export default NotFound;
