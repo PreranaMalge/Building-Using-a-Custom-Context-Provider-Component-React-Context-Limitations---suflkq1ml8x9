@@ -1,31 +1,26 @@
-import React, {Component, useState} from "react";
-import {BrowserRouter, Route, Routes, Switch} from "react-router-dom";
+import React, { Component, useState } from "react";
+import { BrowserRouter, Route, Routes, Switch } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
-import NotMatch from "./Notmatch";
-import Other from "./NotFound";
+import NotMatch from "./NotMatch";
 import '../styles/App.css';
-import LocationDisplay from "./LocationDisplay";
-import NotFound from "./NotFound";
-
+import Navli from "./Navli";
 
 class App extends Component {
     render() {
 
-        return(
+        return (
             <>
-            <BrowserRouter>
-                <div id="main">
-                     {/* Do not remove the main div */}
-                         <Other/>
-                            <Switch>
-                                <Route exact path="/" component={Home}/>
-                                <Route exact path="/about" component={About}/>
-                                <Route exact path="/*" component={NotMatch}/>
-                            </Switch>
-                        <LocationDisplay/>
-                </div>
-            </BrowserRouter>
+                <BrowserRouter>
+                    <div id="main">
+                        <Navli />
+                        <Switch>
+                            <Route exact path="/" component={Home} />
+                            <Route exact path="/about" component={About} />
+                            <Route exact path="/*" component={NotMatch} />
+                        </Switch>
+                    </div>
+                </BrowserRouter>
             </>
         )
     }

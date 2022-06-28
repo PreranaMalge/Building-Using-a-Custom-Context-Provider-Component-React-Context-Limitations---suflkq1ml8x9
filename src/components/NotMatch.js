@@ -1,11 +1,12 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-const NotMatch =()=>{
-    return(
-        <>
-            <div>No match</div>
-        </>
-    )
+const NotMatch = () => {
+  return (
+    <>
+    <div>No match</div>
+    </>
+  )
 }
-export default NotMatch;
+
+export default NotMatch
